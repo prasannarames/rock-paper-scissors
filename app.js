@@ -11,6 +11,7 @@ function computerPlay(){
     else if(computerPick === 3){
         result ="scissors";
     }else{
-        result ="error";
+        console.log("error");
     }
+    return result;
 }
