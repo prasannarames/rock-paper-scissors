@@ -36,3 +36,13 @@ body {
     border-style: dashed ;
     padding: 1px;
 }
+
+.result-selection {
+    opacity: .3;
+
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 2rem;
+}

@@ -1,17 +1,27 @@
-// function computerPlay(){
-//     let result = " ";
-//     let computerPick = Math.floor(Math.random()*3) +1;
+const btnSelection = document.querySelectorAll('[data-selection]');
 
-//     if(computerPick === 1){
-//         result ="rock";
-//     }
-//     else if(computerPick === 2){
-//         result ="paper";
-//     }
-//     else if(computerPick === 3){
-//         result ="scissors";
-//     }else{
-//         console.log("error");
-//     }
-//     return result;
-// }
+const gamePlay = [
+    {name:'rock', emoji:'🗿', beats: 'scissors'},
+    {name:'paper', emoji:'📄', beats: 'rock'},
+    {name:'scissors', emoji:'✂', beats: 'paper'}
+]
+
+// playerPlay
+btnSelection.forEach(buttonSelection=>{
+    buttonSelection.addEventListener('click', e=>{
+        const btnSelect = buttonSelection.dataset.selection
+        const selection = gamePlay.find(selection => selection.name === btnSelect)
+        makeSelection(selection);
+    });
+});
+
+function makeSelection(selection){
+    console.log(selection);
+
+}
+
+// computerPlay
+
+function computerPlay(){
+    
+}
