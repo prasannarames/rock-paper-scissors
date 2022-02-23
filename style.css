@@ -1,0 +1,38 @@
+body {
+    background-color: aliceblue;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+.selection {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+    transition: 100ms;
+
+}
+
+.selection:hover {
+    transform:scale(1.2);
+}
+
+.results {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+}
+
+.results-score {
+    margin: 1rem;
+    font-size: .5rem;
+    border-style: dashed ;
+    padding: 1px;
+}
